@@ -1,0 +1,33 @@
+@font-face{
+    font-family: Clash-medium;
+    src: url("C:/Coding Files/HTML/Cafe-website/Fonts/ClashGrotesk-Medium.otf");
+}
+
+body {
+    background-color: rgb(45,4,2);
+}
+
+.header h1 {
+    color: rgb(203,226,224);
+    font-family: Clash-medium;
+    font-size: 30px;
+    display: flex;
+    padding-top: 60px;
+    padding-left: 60px;
+}
+
+.nav-link {
+    display: flex;
+    padding-top: 60px;
+    padding-right: 40px;
+    justify-content: end;
+}
+
+.navs {
+    color: rgb(203,226,224);
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    padding: 40px;
+    font-family: Clash-medium;
+}
