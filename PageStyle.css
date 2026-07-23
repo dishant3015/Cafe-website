@@ -1,6 +1,7 @@
 @font-face{
     font-family: Clash-medium;
     src: url("C:/Coding Files/HTML/Cafe-website/Fonts/ClashGrotesk-Medium.otf");
+
 }
 
 body {
@@ -57,4 +58,54 @@ nav:hover .navs:hover {
     filter: blur(0);
     opacity: 1;
     transform: scale(1.4);
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 700px 350px;
+    grid-template-rows: 800px;
+    gap: 50px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+    grid-template-areas: 
+    "box-1 box-2";
+}
+
+.masked-text {
+    color: rgb(203,226,224);
+    font-family: Clash-medium;
+    text-align: center;
+    font-size: 60px;
+    color: transparent;
+    background-image: url(Images/Masked-photo-coffee.jpg);
+    background-size: 100%;
+    background-position: 0 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-background 5s infinite alternate linear;
+    transition: filter 0.25s ease;
+    user-select: none;
+}
+
+@keyframes animate-background {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.masked-text:hover {
+    filter: blur(1px);
+}
+
+.masking-container p {
+    font-family: Clash-medium;
+    font-size: 35px;
+    user-select: none;
+    text-align: left;
+    color: rgb(203,226,224);
 }
