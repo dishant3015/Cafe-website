@@ -17,6 +17,11 @@ body {
     user-select: none;
 }
 
+.header img {
+    width: 100px;
+    height: 100px;
+}
+
 .nav-link {
     display: flex;
     padding-top: 60px;
