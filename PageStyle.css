@@ -41,27 +41,73 @@ body {
     justify-content: end;
 }
 
-.navs {
+.home, .insights, .menu, .gallery, .about{
     color: rgb(203,226,224);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 40px;
     padding: 10px;
     font-family: Clash-medium;
 }
 
-.navs {
+.home, .insights, .menu, .gallery, .about {
     transition: transform 0.25s ease, filter 0.25s ease;
 }
 
-.nav-link:has(.navs:hover) .navs:not(:hover){
+.nav-link:has(:is(.home, .insights, .menu, .gallery, .about):hover)
+ :is(.home, .insights, .menu, .gallery, .about):not(:hover) {
     filter: blur(15px);
     opacity: 0.4;
 }
 
-nav:hover .navs:hover {
+:is(.home, .insights, .menu, .gallery, .about):hover {
     filter: blur(0);
     opacity: 1;
     transform: scale(1.4);
+}
+
+.home:hover {
+    color: transparent;
+    background-image: url(Images/Homelink-photo.jpg);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.insights:hover {
+    color: transparent;
+    background-image: url(Images/Typing-on-laptop.jpg);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu:hover {
+    color: transparent;
+    background-image: url(Images/Cafe-dish-2.jpg);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gallery:hover {
+    color: transparent;
+    background-image: url(Images/People-in-cafe.jpg);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about:hover {
+    color: transparent;
+    background-image: url(Images/Cafe-staff.jpg);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .layout {
@@ -88,18 +134,8 @@ nav:hover .navs:hover {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: animate-background 5s infinite alternate linear;
     transition: filter 0.25s ease;
     user-select: none;
-}
-
-@keyframes animate-background {
-    0% {
-        background-position: 0 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
 }
 
 .masked-text:hover {
@@ -111,5 +147,19 @@ nav:hover .navs:hover {
     font-size: 35px;
     user-select: none;
     text-align: left;
-    color: rgb(203,226,224);
+    color: rgb(45,4,2);
+    margin: 13px;
+}
+
+.masking-container {
+    background-color: rgb(208,160,143);
+    border-radius: 30px;
+}
+
+.box-2 {
+    height: 400px;
+    align-self: start;
+    background-color: rgb(208,160,143);
+    border-radius: 30px;
+    margin-top: 40px;
 }
