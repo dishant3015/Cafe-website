@@ -47,7 +47,7 @@ body::-webkit-scrollbar {
     display: flex;
     padding-top: 60px;
     padding-right: 40px;
-    justify-content: space-around;
+    justify-content: end;
 }
 
 .home, .insights, .menu, .gallery, .about{
