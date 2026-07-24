@@ -217,3 +217,7 @@ body::-webkit-scrollbar {
     background-color: rgb(208,160,143);
     border-radius: 30px;
 }
+
+.menu-styling {
+    scroll-margin-top: 60px;
+}
